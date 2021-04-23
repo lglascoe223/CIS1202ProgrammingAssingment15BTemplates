@@ -10,30 +10,30 @@
 
 using namespace std;
 
-template <class T>
+template <class T> //needed for templates
 
-T half(T number) {
+T half(T number) { // template function called half 
 
-	return round(number / 2.0);
+	return round(number / 2.0); // returns half the value rounded up or down depending on the value
 }
 
-int half(int number) {
+int half(int number) { // funtion called half that accepts an integer
 
-	double result;
-	result = static_cast<double>(number / 2.0);
-	return round(result);
+	double result; // to hold the double result
+	result = static_cast<double>(number / 2.0); // gets the result of half the value by changing the integer into a double variable
+	return round(result); // return the value rounded accordingly.
 }
 
 
 int main() {
 	
-	double a = 7.0;
-	float b = 5.0;
-	int c = 3;
+	double a = 7.0; // a double value
+	float b = 5.0; // a float value
+	int c = 3; // an interger value
 
-	cout << half(a) << endl;
-	cout << half(b) << endl;
-	cout << half(c) << endl;
+	cout << half(a) << endl; // calls half function to return value a
+	cout << half(b) << endl; // calls half function to return value b
+	cout << half(c) << endl; // calls half function to return value c
 
 
 
