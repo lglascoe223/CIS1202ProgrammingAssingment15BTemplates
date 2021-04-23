@@ -14,13 +14,14 @@ template <class T> //needed for templates
 
 T half(T number) { // template function called half 
 
-	return round(number / 2.0); // returns half the value rounded up or down depending on the value
+	return round(number)/ 2.0; // returns half the value rounded up or down depending on the value
 }
 
 int half(int number) { // funtion called half that accepts an integer
 
 	double result; // to hold the double result
-	result = static_cast<double>(number / 2.0); // gets the result of half the value by changing the integer into a double variable
+	
+	result = static_cast<double>(number) / 2.0; // gets the result of half the value by changing the integer into a double variable
 	return round(result); // return the value rounded accordingly.
 }
 
